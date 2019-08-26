@@ -26,4 +26,9 @@ describe Tennis do
     tennis.point(*[Array.new(3, :s), Array.new(3, :r)].flatten)
     expect(tennis.score).to eq "deuce"
   end
+
+  it 'returns a score of "deucde" if server and reciever scores more than 3 points each' do
+    tennis.point(*[Array.new(4, :s), Array.new(4, :r)].flatten)
+    expect(tennis.score).to eq "deuce"
+  end
 end

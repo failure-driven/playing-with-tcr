@@ -22,7 +22,7 @@ class Tennis
   private
 
   def deuce?
-    same_score? && @points.values.min == 3
+    same_score? && @points.values.min >= 3
   end
 
   def same_score?
