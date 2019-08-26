@@ -5,8 +5,8 @@ import App from "./App";
 it("renders", () => {
   const wrapper = shallow(<App />);
   expect(wrapper.find("h1").text()).toEqual("Pairing Talk Todo");
-  expect(wrapper.find("Form")).toHaveLength(1);
-  expect(wrapper.find("Form").prop('addItem')).toHaveLength(1);
+  expect(wrapper.find("Form").prop("addItem")).toHaveLength(1);
+  expect(wrapper.find("List").prop("items")).toEqual([]);
   expect(wrapper).toMatchInlineSnapshot(`
     <div>
       <h1>
@@ -17,6 +17,9 @@ it("renders", () => {
       </h3>
       <Form
         addItem={[Function]}
+      />
+      <List
+        items={Array []}
       />
     </div>
   `);
