@@ -7,8 +7,10 @@ describe("WHEN rendered", () => {
     const wrapper = shallow(<Form />);
     expect(wrapper.find("input")).toHaveLength(1);
     expect(wrapper.find("input").prop("value")).toEqual("");
+    expect(wrapper.find("input").prop("autoFocus")).toBeTruthy();
     expect(wrapper).toMatchInlineSnapshot(`
       <input
+        autoFocus={true}
         onChange={[Function]}
         value=""
       />

@@ -7,7 +7,7 @@ const Form = () => {
     setValue(event.target.value)
   }
 
-  return <input value={value} onChange={onChangeInput}>
+  return <input autoFocus value={value} onChange={onChangeInput}>
   </input>
 };
 
