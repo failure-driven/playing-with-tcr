@@ -6,7 +6,7 @@ it("renders", () => {
   const wrapper = shallow(<App />);
   expect(wrapper).toMatchInlineSnapshot(`
     <div>
-      React app goes here
+      React app goes here!
     </div>
   `);
 });
