@@ -40,4 +40,13 @@ it("adds items", () => {
       { id: '123', text: 'a todo item', isComplete: false, isEditing: false }
     ]
   );
+
+  uuidMock.mockImplementationOnce(() => "abc");
+  wrapper.find("Form").prop("addItem")("another todo")
+  expect(wrapper.find("List").prop("items")).toEqual(
+    [
+      { id: '123', text: 'a todo item', isComplete: false, isEditing: false },
+      { id: 'abc', text: 'another todo', isComplete: false, isEditing: false }
+    ]
+  );
 });

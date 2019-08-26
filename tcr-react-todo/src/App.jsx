@@ -9,14 +9,14 @@ function App() {
   const [items, setItems] = useState([])
 
   const addItem = (text) => {
-    setItems([
-      {
-        id: uuid(),
-        isComplete: false,
-        isEditing: false,
-        text
-      }
-    ])
+    const newItem = {
+      id: uuid(),
+      isComplete: false,
+      isEditing: false,
+      text
+    };
+
+    setItems([...items, newItem])
   }
 
   return (
