@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import uuid from 'uuid/v4'
 import './App.css';
 import Form from './Form'
-
-const List = () => <></>
+import List from './List'
 
 function App() {
   const [items, setItems] = useState([])
