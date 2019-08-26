@@ -1,6 +1,9 @@
 class FizzBuzz
   def number(number)
-    divisible_by(number, 3) ? "fizz" : divisible_by(number, 5) ? "buzz" : number
+    return "fizz" if divisible_by(number, 3)
+    return "buzz" if divisible_by(number, 5)
+
+    number
   end
 
   private
