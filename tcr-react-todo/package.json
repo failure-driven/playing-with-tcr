@@ -12,7 +12,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tcr": "bash -c 'jest && git commit -am working || git reset --hard'"
+    "tcr": "bash -c 'yarn test --watchAll=false && git commit -am working || git reset --hard'"
   },
   "eslintConfig": {
     "extends": "react-app"
