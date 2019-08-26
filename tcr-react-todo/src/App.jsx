@@ -11,6 +11,7 @@ function App() {
   const addItem = (text) => {
     const newItem = {
       id: uuid(),
+      ordinal: items.length + 1,
       isComplete: false,
       isEditing: false,
       text

@@ -37,7 +37,7 @@ it("adds items", () => {
   wrapper.find("Form").prop("addItem")("a todo item")
   expect(wrapper.find("List").prop("items")).toEqual(
     [
-      { id: '123', text: 'a todo item', isComplete: false, isEditing: false }
+      { id: '123', ordinal: 1, text: 'a todo item', isComplete: false, isEditing: false }
     ]
   );
 
@@ -45,8 +45,8 @@ it("adds items", () => {
   wrapper.find("Form").prop("addItem")("another todo")
   expect(wrapper.find("List").prop("items")).toEqual(
     [
-      { id: '123', text: 'a todo item', isComplete: false, isEditing: false },
-      { id: 'abc', text: 'another todo', isComplete: false, isEditing: false }
+      { id: '123', ordinal: 1, text: 'a todo item', isComplete: false, isEditing: false },
+      { id: 'abc', ordinal: 2, text: 'another todo', isComplete: false, isEditing: false }
     ]
   );
 });
