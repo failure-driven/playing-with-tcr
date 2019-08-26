@@ -10,6 +10,7 @@ describe FizzBuzz do
 
   it 'returns "buzz" for 5' do
     expect(fizz_buzz.number(5)).to eq "buzz"
+    expect(fizz_buzz.number(10)).to eq "buzz"
   end
 
   it "returns the number if NOT divisible by 3 or 5" do
