@@ -1,5 +1,11 @@
 class FizzBuzz
   def number(number)
-    (number % 3 == 0) ? "fizz" : number == 5 ? "buzz" : number
+    divisible_by(number, 3) ? "fizz" : number == 5 ? "buzz" : number
+  end
+
+  private
+
+  def divisible_by(number, dividend)
+    number % dividend == 0
   end
 end

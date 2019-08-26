@@ -4,6 +4,6 @@ FizzBuzz
   returns "buzz" for 5
   returns the number if NOT divisible by 3 or 5
 
-Finished in 0.00152 seconds (files took 0.09558 seconds to load)
+Finished in 0.00124 seconds (files took 0.09404 seconds to load)
 3 examples, 0 failures
 
