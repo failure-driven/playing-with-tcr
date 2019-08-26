@@ -11,4 +11,10 @@ describe Tennis do
     tennis.point(:s)
     expect(tennis.score).to eq "15 love"
   end
+
+  it 'returns a score of "15 all" if server and reciever scores a point each' do
+    tennis.point(:s)
+    tennis.point(:r)
+    expect(tennis.score).to eq "15 all"
+  end
 end
