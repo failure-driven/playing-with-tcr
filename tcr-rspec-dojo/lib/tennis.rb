@@ -6,6 +6,8 @@ class Tennis
   end
 
   def score
+    return "deuce" if deuce?
+
     score = @points.values.map { |point| SCORES[point] }
     score[1] = "all" if same_score?
     score.join(" ")
@@ -18,6 +20,10 @@ class Tennis
   end
 
   private
+
+  def deuce?
+    same_score? && @points.values.min == 3
+  end
 
   def same_score?
     @points.values.uniq.length == 1
