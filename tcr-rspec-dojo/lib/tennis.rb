@@ -1,10 +1,13 @@
 class Tennis
+  SCORES = ["love", 15]
+
   def initialize
-    @points = { s: 0 }
+    @points = { s: 0, r: 0 }
   end
 
   def score
-    @points.values[0] == 1 ? "15 love" : "love all"
+    score = @points.values.map { |point| SCORES[point] }.join(" ")
+    score == "love love" ? "love all" : score
   end
 
   def point(player)
