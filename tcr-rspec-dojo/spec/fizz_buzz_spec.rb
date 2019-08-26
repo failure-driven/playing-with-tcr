@@ -5,6 +5,7 @@ describe FizzBuzz do
 
   it 'returns "fizz" for 3' do
     expect(fizz_buzz.number(3)).to eq "fizz"
+    expect(fizz_buzz.number(6)).to eq "fizz"
   end
 
   it 'returns "buzz" for 5' do
