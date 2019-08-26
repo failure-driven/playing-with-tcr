@@ -12,14 +12,19 @@ describe("WHEN rendered", () => {
       <input
         autoFocus={true}
         onChange={[Function]}
+        onKeyDown={[Function]}
         value=""
       />
     `);
   });
 
-  it("stores value that is typed into input", () => {
-    const wrapper = shallow(<Form />);
+  it("stores value that is typed into input and addItem on return and resets the input", () => {
+    const addItem = jest.fn();
+    const wrapper = shallow(<Form addItem={addItem} />);
     wrapper.find("input").simulate("change", { target: { value: "a todo" } });
     expect(wrapper.find("input").prop("value")).toEqual("a todo");
+    wrapper.find("input").simulate("keyDown", { key: "Enter" });
+    expect(addItem).toBeCalledWith("a todo");
+    expect(wrapper.find("input").prop("value")).toEqual("");
   });
 });
