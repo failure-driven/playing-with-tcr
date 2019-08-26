@@ -1,5 +1,7 @@
-No examples found.
 
-Finished in 0.00018 seconds (files took 0.09085 seconds to load)
-0 examples, 0 failures
+FizzBuzz
+  returns "fizz" for 3
+
+Finished in 0.00716 seconds (files took 0.08909 seconds to load)
+1 example, 0 failures
 
