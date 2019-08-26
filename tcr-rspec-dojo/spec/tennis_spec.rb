@@ -6,4 +6,9 @@ describe Tennis do
   it 'starts a game with "love all"' do
     expect(tennis.score).to eq "love all"
   end
+
+  it 'returns a score of "15 love" if server scores a point' do
+    tennis.point(:s)
+    expect(tennis.score).to eq "15 love"
+  end
 end

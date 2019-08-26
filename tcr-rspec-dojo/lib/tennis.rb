@@ -1,5 +1,9 @@
 class Tennis
   def score
-    "love all"
+    @point == 1 ? "15 love" : "love all"
+  end
+
+  def point(player)
+    @point = 1
   end
 end
