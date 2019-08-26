@@ -3,8 +3,13 @@ require "tennis"
 describe Tennis do
   subject(:tennis) { Tennis.new }
 
-  it 'starts a game with "love all"' do
-    expect(tennis.score).to eq "love all"
+  [
+    { score: "love all", points: [] },
+  ].each do |args|
+    it "returns score #{args[:score].inspect} for points #{args[:points]}" do
+      tennis.point(*args[:points])
+      expect(tennis.score).to eq args[:score]
+    end
   end
 
   it 'returns a score of "15 love" if server scores a point' do
