@@ -1,7 +1,8 @@
 
 FizzBuzz
   returns "fizz" for 3
+  returns "buzz" for 5
 
-Finished in 0.00716 seconds (files took 0.08909 seconds to load)
-1 example, 0 failures
+Finished in 0.00139 seconds (files took 0.09833 seconds to load)
+2 examples, 0 failures
 
