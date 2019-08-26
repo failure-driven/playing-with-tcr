@@ -11,8 +11,10 @@ class Tennis
     score.join(" ")
   end
 
-  def point(player)
-    @points[player] += 1
+  def point(*players)
+    players.each do |player|
+      @points[player] += 1
+    end
   end
 
   private
