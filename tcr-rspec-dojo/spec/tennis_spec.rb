@@ -18,7 +18,7 @@ describe Tennis do
   end
 
   it 'returns a score of "30 all" if server and reciever scores 2 points each' do
-    tennis.point(:s, :r, :r, :s)
+    tennis.point(*[Array.new(1, :s), :r, :r, :s].flatten)
     expect(tennis.score).to eq "30 all"
   end
 end
