@@ -5,9 +5,17 @@ import Form from './Form'
 const List = () => <></>
 
 function App() {
-  const [items] = useState([])
+  const [items, setItems] = useState([])
 
   const addItem = (text) => {
+    setItems([
+      {
+        id: '123',
+        isComplete: false,
+        isEditing: false,
+        text
+      }
+    ])
   }
 
   return (

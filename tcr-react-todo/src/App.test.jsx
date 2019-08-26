@@ -24,3 +24,14 @@ it("renders", () => {
     </div>
   `);
 });
+
+it("adds items", () => {
+  const wrapper = shallow(<App />);
+  expect(wrapper.find("List").prop("items")).toEqual([]);
+  wrapper.find("Form").prop("addItem")("a todo item")
+  expect(wrapper.find("List").prop("items")).toEqual(
+    [
+      { id: '123', text: 'a todo item', isComplete: false, isEditing: false }
+    ]
+  );
+});
