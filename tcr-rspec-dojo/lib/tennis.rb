@@ -6,11 +6,18 @@ class Tennis
   end
 
   def score
-    score = @points.values.map { |point| SCORES[point] }.join(" ")
-    score == "love love" ? "love all" : score
+    score = @points.values.map { |point| SCORES[point] }
+    score[1] = "all" if same_score?
+    score.join(" ")
   end
 
   def point(player)
     @points[player] += 1
+  end
+
+  private
+
+  def same_score?
+    @points.values.uniq.length == 1
   end
 end
