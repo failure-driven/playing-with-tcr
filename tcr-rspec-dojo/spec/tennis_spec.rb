@@ -16,4 +16,9 @@ describe Tennis do
     tennis.point(:s, :r)
     expect(tennis.score).to eq "15 all"
   end
+
+  it 'returns a score of "30 all" if server and reciever scores 2 points each' do
+    tennis.point(:s, :r, :r, :s)
+    expect(tennis.score).to eq "30 all"
+  end
 end

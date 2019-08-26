@@ -1,5 +1,5 @@
 class Tennis
-  SCORES = ["love", 15]
+  SCORES = ["love", 15, 30]
 
   def initialize
     @points = { s: 0, r: 0 }
