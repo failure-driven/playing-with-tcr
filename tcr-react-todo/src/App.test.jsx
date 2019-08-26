@@ -1,6 +1,9 @@
 import React from "react";
 import { shallow } from "enzyme";
 import App from "./App";
+import { JestEnvironment } from "@jest/environment";
+
+jest.mock('uuid/v4')
 
 it("renders", () => {
   const wrapper = shallow(<App />);
@@ -26,6 +29,9 @@ it("renders", () => {
 });
 
 it("adds items", () => {
+  const uuidMock = require("uuid/v4");
+  uuidMock.mockImplementationOnce(() => "123");
+
   const wrapper = shallow(<App />);
   expect(wrapper.find("List").prop("items")).toEqual([]);
   wrapper.find("Form").prop("addItem")("a todo item")

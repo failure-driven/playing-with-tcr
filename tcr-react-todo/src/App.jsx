@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import uuid from 'uuid/v4'
 import './App.css';
 import Form from './Form'
 
@@ -10,7 +11,7 @@ function App() {
   const addItem = (text) => {
     setItems([
       {
-        id: '123',
+        id: uuid(),
         isComplete: false,
         isEditing: false,
         text
