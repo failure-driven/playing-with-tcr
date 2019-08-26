@@ -2,7 +2,9 @@
 
 <div align="center">
 
-[slides](https://failure-driven.github.io/playing-with-tcr/)
+[Slides PDF](Playing_with_TCR.pdf)
+
+[~slides~](https://failure-driven.github.io/playing-with-tcr/)
 
 </div>
 
