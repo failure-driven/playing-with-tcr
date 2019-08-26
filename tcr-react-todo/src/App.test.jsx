@@ -13,7 +13,9 @@ it("renders", () => {
   expect(wrapper.find("List").prop("removeItem")).toHaveLength(1);
   expect(wrapper.find("List").prop("toggleItem")).toHaveLength(1);
   expect(wrapper).toMatchInlineSnapshot(`
-    <div>
+    <div
+      className="todo"
+    >
       <h1>
         Pairing Talk Todo
       </h1>

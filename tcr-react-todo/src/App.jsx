@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import uuid from 'uuid/v4'
-import './App.css';
+import './App.scss';
 import Form from './Form'
 import List from './List'
 
@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="todo">
       <h1>Pairing Talk Todo</h1>
       <h3>An easy way to sort out your tasks, fast and efficient</h3>
       <Form addItem={addItem} />

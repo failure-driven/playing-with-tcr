@@ -1,10 +1,9 @@
 import React from "react"
+import Item from './Item'
 
-const Item = ({item: {text}}) => <li>{text}</li>
-
-const List = ({items}) => (
+const List = ({items, toggleItem}) => (
   <ul>
-    {items.map(item => <Item key={item.id} item={item} />)}
+    {items.map(item => <Item key={item.id} item={item} toggleItem={toggleItem} />)}
   </ul>
 );
 
