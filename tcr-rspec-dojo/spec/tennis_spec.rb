@@ -5,16 +5,12 @@ describe Tennis do
 
   [
     { score: "love all", points: [] },
+    { score: "15 love", points: [:s] },
   ].each do |args|
     it "returns score #{args[:score].inspect} for points #{args[:points]}" do
       tennis.point(*args[:points])
       expect(tennis.score).to eq args[:score]
     end
-  end
-
-  it 'returns a score of "15 love" if server scores a point' do
-    tennis.point(:s)
-    expect(tennis.score).to eq "15 love"
   end
 
   it 'returns a score of "15 all" if server and reciever scores a point each' do
