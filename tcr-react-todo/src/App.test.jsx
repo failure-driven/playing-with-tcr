@@ -6,6 +6,7 @@ it("renders", () => {
   const wrapper = shallow(<App />);
   expect(wrapper.find("h1").text()).toEqual("Pairing Talk Todo");
   expect(wrapper.find("Form")).toHaveLength(1);
+  expect(wrapper.find("Form").prop('addItem')).toHaveLength(1);
   expect(wrapper).toMatchInlineSnapshot(`
     <div>
       <h1>
@@ -14,7 +15,9 @@ it("renders", () => {
       <h3>
         An easy way to sort out your tasks, fast and efficient
       </h3>
-      <Form />
+      <Form
+        addItem={[Function]}
+      />
     </div>
   `);
 });
