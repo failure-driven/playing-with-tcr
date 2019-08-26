@@ -2,7 +2,8 @@
 FizzBuzz
   returns "fizz" for 3
   returns "buzz" for 5
+  returns the number if NOT divisible by 3 or 5
 
-Finished in 0.00139 seconds (files took 0.09833 seconds to load)
-2 examples, 0 failures
+Finished in 0.00147 seconds (files took 0.0933 seconds to load)
+3 examples, 0 failures
 
