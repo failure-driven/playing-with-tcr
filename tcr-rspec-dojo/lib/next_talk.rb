@@ -4,6 +4,6 @@ class NextTalk
   end
 
   def seconds_left
-    return 0 if @talk_start_time == @talk_start_time
+    return 0 if @talk_start_time == Time.now
   end
 end
