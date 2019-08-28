@@ -19,4 +19,9 @@ describe FizzBuzz do
     expect(fizz_buzz.number(10)).to eq "buzz"
     expect(fizz_buzz.number(25)).to eq "buzz"
   end
+
+  it "outputs number not 3 or 5 divisibile" do
+    fizz_buzz = FizzBuzz.new
+    expect(fizz_buzz.number(2)).to eq 2
+  end
 end
