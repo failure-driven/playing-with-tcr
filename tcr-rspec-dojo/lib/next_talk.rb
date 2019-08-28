@@ -6,6 +6,6 @@ class NextTalk
   end
 
   def seconds_left
-    @talk_start_time - Time.now
+    (@talk_start_time - Time.now).round
   end
 end
