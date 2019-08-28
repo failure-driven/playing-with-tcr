@@ -5,7 +5,10 @@ import Item from "./Item";
 describe("WHEN rendered", () => {
   it("THEN renders", () => {
     const wrapper = shallow(
-      <Item item={{ text: "an item", isComplete: false }} />
+      <Item
+        item={{ text: "an item", isComplete: false }}
+        toggleItem={jest.fn()}
+      />
     );
     expect(wrapper.find("li")).toHaveLength(1);
     expect(wrapper.find("li input").prop("type")).toEqual("checkbox");
@@ -20,13 +23,16 @@ describe("WHEN rendered", () => {
       <li>
         <input
           checked={false}
+          onChange={[Function]}
           type="checkbox"
         />
         <span
           className="checkmark"
           onClick={[Function]}
         />
-        <span>
+        <span
+          className={false}
+        >
           an item
         </span>
       </li>
@@ -36,7 +42,10 @@ describe("WHEN rendered", () => {
   it("calls toggleItem when checkbox is checked", () => {
     const mockToggleItem = jest.fn();
     const wrapper = shallow(
-      <Item item={{ id: "123", text: "an item", toggleItem: mockToggleItem }} />
+      <Item
+        item={{ id: "123", text: "an item" }}
+        toggleItem={mockToggleItem}
+      />
     );
     wrapper.find("li .checkmark").simulate("click");
     expect(mockToggleItem).toHaveBeenCalledWith("123");
