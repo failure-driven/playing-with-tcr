@@ -1,3 +1,5 @@
+require "time"
+
 class NextTalk
   def initialize(talk_start_time)
     @talk_start_time = Time.parse(talk_start_time)
