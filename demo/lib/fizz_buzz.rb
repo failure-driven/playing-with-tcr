@@ -4,6 +4,8 @@ class FizzBuzz
   end
 
   def number(number_to_fizz_buzz)
+    return "fizzbuzz" if div_by(number_to_fizz_buzz, 3) &&
+                         div_by(number_to_fizz_buzz, 5)
     return "fizz" if div_by(number_to_fizz_buzz, 3)
     return "buzz" if div_by(number_to_fizz_buzz, 5)
 

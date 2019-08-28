@@ -24,4 +24,9 @@ describe FizzBuzz do
     fizz_buzz = FizzBuzz.new
     expect(fizz_buzz.number(2)).to eq 2
   end
+
+  it "fizz buzz for div by 3 && 5" do
+    fizz_buzz = FizzBuzz.new
+    expect(fizz_buzz.number(15)).to eq "fizzbuzz"
+  end
 end
