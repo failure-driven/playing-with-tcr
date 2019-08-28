@@ -4,6 +4,8 @@ class FizzBuzz
   end
 
   def number(number_to_fizz_buzz)
-    number_to_fizz_buzz % 3 == 0 ? "fizz" : "buzz"
+    return "fizz" if number_to_fizz_buzz % 3 == 0
+
+    "buzz"
   end
 end
