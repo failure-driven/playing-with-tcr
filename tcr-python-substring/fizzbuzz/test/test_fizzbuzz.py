@@ -19,7 +19,5 @@ class TestFizzBuzz(unittest.TestCase):
     def test_returns_string_of_number_otherwise(self):
         self.assertEqual(fizzbuzz.number(2), '2')
 
-assert True
-
 if __name__ == '__main__':
     unittest.main()
