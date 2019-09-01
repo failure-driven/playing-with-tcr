@@ -4,7 +4,7 @@ def number(number):
     return "fizzbuzz"
   if number % 3 == 0:
     output.append('fizz')
-    return "fizz"
+    return "".join(output)
   if number % 5 == 0:
     return "buzz"
   return str(number)
