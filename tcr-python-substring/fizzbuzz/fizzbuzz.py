@@ -1,2 +1,2 @@
 def output():
-  return list(range(1,100))
+  return " ".join(map(str, list(range(1,100))))
