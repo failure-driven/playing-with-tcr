@@ -6,7 +6,8 @@ def number(number):
     output.append('fizz')
     return "".join(output)
   if number % 5 == 0:
-    return 'buzz'
+    output.append('buzz')
+    return "".join(output)
   return str(number)
 
 def output():
