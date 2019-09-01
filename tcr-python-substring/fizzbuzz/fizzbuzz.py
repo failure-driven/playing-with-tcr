@@ -4,11 +4,12 @@ def number(number):
     return 'fizzbuzz'
   if number % 3 == 0:
     output.append('fizz')
-    return "".join(output)
   if number % 5 == 0:
     output.append('buzz')
+  if output == []:
+    return str(number)
+  else:
     return "".join(output)
-  return str(number)
 
 def output():
   return " ".join(map(number, list(range(1,100))))
