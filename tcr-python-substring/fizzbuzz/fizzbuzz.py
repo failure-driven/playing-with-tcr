@@ -1,4 +1,4 @@
-def fb_str(number):
+def number(number):
   if number % 3 == 0 and number % 5 == 0:
     return 'fizzbuzz'
   if number % 3 == 0:
@@ -8,4 +8,4 @@ def fb_str(number):
   return str(number)
 
 def output():
-  return " ".join(map(fb_str, list(range(1,100))))
+  return " ".join(map(number, list(range(1,100))))
