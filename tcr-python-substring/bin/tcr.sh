@@ -12,9 +12,7 @@ test () {
 }
 
 commit () {
-  echo -e "${GREEN}"
   cat $TEST_OUTPUT
-  echo -e "${NC}"
   echo -e "${GREEN}Green!!!${NC}"
   git add -A
   git commit -m "$(date +%s)"
