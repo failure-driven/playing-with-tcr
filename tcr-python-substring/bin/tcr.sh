@@ -20,7 +20,7 @@ commit () {
 }
 
 revert () {
-  echo "Revert =("
+  echo -e "${RED}Revert =(${NC}"
   git reset --hard
   git clean -fd
   exit 1
