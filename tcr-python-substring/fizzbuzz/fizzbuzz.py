@@ -1,4 +1,5 @@
 def number(number):
+  output = []
   if number % 15 == 0:
     return 'fizzbuzz'
   if number % 3 == 0:
