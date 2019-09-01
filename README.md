@@ -61,3 +61,14 @@ then you do a separeate loop (layer) of testing at the unit level.
 
 _coming soon_
 
+## More information
+
+* Xavier Detnat talk - May 16, 2019 { newcrafts } conference - Paris
+  * http://videos.ncrafts.io/video/338862766
+* Popularised by Kent Beck - Sep 28, 2018
+  * https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
+* Rachel M. Carmena@bberrycarmen
+  * https://twitter.com/bberrycarmen/status/1062421008261541888 
+* tcr.sh script from Sam Gathercole - sapagat
+  * https://github.com/sapagat/tcr 
+
