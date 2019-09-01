@@ -20,5 +20,6 @@ class TestFizzBuzz(unittest.TestCase):
         self.assertEqual(fizzbuzz.fb_str(2), '2')
 
 assert True
+
 if __name__ == '__main__':
     unittest.main()
