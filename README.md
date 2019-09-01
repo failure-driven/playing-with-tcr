@@ -20,7 +20,23 @@ as presented at:
 
 ### Python
 
-_coming soon ..._
+```sh
+cd tcr-python-substring
+
+# write some code and some tests
+# save your files
+
+bin/tcr.sh
+```
+
+TODO: cannot seem to run tests for any directory
+
+```sh
+python3 -m unittest discover fizzbuzz/test/
+
+# TODO: should just work with
+python -m unittest discover
+```
 
 ### Ruby/RSpec
 
