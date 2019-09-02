@@ -4,8 +4,6 @@
 
 [Slides PDF](Playing_with_TCR.pdf)
 
-[~slides~](https://failure-driven.github.io/playing-with-tcr/)
-
 </div>
 
 TCR = `(Test && Commit) || Revert`
@@ -14,6 +12,8 @@ TCR = `(Test && Commit) || Revert`
 
 as presented at:
   * [Mon 2 Sep 2019 - Melbourne Python Meetup](https://www.meetup.com/Melbourne-Python-Meetup-Group/events/rrvtsqyzmbdb/)
+    - [Michael Milewski: Next-level test driven development with TCR (~15-20 minutes)](https://wiki.python.org/moin/MelbournePUG)
+    - 5:45pm for 6:00pm. Level 2, 17 Hardware Lane, Melbourne CBD
   * [Wed 28 Aug 2019 - Melbourne Ruby](https://www.meetup.com/Ruby-On-Rails-Oceania-Melbourne/events/hrznsqyzlblc/)
 
 ## Get going with TCR
@@ -87,4 +87,8 @@ _coming soon_
   * https://twitter.com/bberrycarmen/status/1062421008261541888 
 * tcr.sh script from Sam Gathercole - sapagat
   * https://github.com/sapagat/tcr 
+
+## Other
+
+[~slides~](https://failure-driven.github.io/playing-with-tcr/)
 
