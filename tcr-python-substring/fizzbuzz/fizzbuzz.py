@@ -1,11 +1,10 @@
 def number(number):
-  if number % 5 == 0 and number % 3 == 0:
-    return 'fizzbuzz'
-  if number % 5 == 0:
-    return 'buzz'
+  output = ""
   if number % 3 == 0:
-    return 'fizz'
-  return str(number)
+    output += 'fizz'
+  if number % 5 == 0:
+    output += 'buzz'
+  return output or str(number)
 
 def output():
   return " ".join(map(number, list(range(1,100))))
