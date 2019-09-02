@@ -7,7 +7,7 @@ def number(number):
   if number % 5 == 0:
     output += "buzz"
 
-  return str(number) if output == "" else output
+  return output or str(number)
 
 def output():
   return " ".join(map(number, list(range(1,100))))
