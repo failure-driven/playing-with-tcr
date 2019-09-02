@@ -1,5 +1,5 @@
 def number(number):
-  if number == 5:
+  if number % 5 == 0:
     return 'buzz'
 
   if number % 3 == 0:

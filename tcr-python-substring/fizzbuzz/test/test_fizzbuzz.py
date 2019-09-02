@@ -14,6 +14,7 @@ class TestFizzBuzz(unittest.TestCase):
 
     def test_fizz_if_mod_5(self):
         self.assertEqual(fizzbuzz.number(5), 'buzz')
+        self.assertEqual(fizzbuzz.number(10), 'buzz')
 
 if __name__ == '__main__':
     unittest.main()
