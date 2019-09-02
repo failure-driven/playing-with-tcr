@@ -1,2 +1,7 @@
+def number(number):
+  if number % 3 == 0:
+    return "fizz"
+  return str(number)
+
 def output():
-  return list(range(1,100))
+  return " ".join(map(number, list(range(1,100))))
